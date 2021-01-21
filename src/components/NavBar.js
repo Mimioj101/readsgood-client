@@ -16,41 +16,23 @@ class NavBar extends React.Component {
     return (
       <div className="navbar">
         <NavLink
-          to="/trails"
-          exact
-          style={link}
-          activeStyle={{background: '#6A994E'}}>
-        Trails</NavLink>
-        <NavLink
-          to="/users"
-        //   set it up so it goes to user show page
-          exact
-          style={link}
-          activeStyle={{background: '#6A994E'}}>
-        Profile Page</NavLink>
-        <NavLink
           to="/"
           exact
           style={link}
           activeStyle={{background: '#6A994E'}}>
-        Welcome!</NavLink>
-        {this.props.user.id 
-        ?
+        Search</NavLink>
         <NavLink
-        to="/logout"
-        exact
-        style={link}
-        activeStyle={{background: '#6A994E'}}>
-        Logout</NavLink>
-        :   
-        <NavLink
-          to="/login"
+          to="/read"
           exact
           style={link}
           activeStyle={{background: '#6A994E'}}>
-        Login</NavLink>
-        }
-        {/* <SearchTrails /> */}
+        My Books</NavLink>
+        <NavLink
+          to="/wannaread"
+          exact
+          style={link}
+          activeStyle={{background: '#6A994E'}}>
+        Books I Want to read</NavLink>
       </div>
     );
   }
