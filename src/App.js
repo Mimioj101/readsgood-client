@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SearchForm from './components/search.js'
+import NavBar from './components/NavBar';
 
 function App() {
   return (
