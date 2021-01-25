@@ -15,6 +15,7 @@ const link = {
 class NavBar extends React.Component {
   render() {
     return (
+    <div>
       <div className="navbar">
         <NavLink
           to="/"
@@ -34,8 +35,9 @@ class NavBar extends React.Component {
           style={link}
           activeStyle={{background: '#6A994E'}}>
         Books I Want to read</NavLink>
-        <SearchForm/>
       </div>
+        <SearchForm/>
+    </div>
     );
   }
 };
