@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import SearchForm from './components/search.js'
 import NavBar from './components/NavBar';
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <SearchForm/>
       </header>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import SearchForm from './search.js'
 
 const link = {
   width: '100px',
@@ -33,6 +34,7 @@ class NavBar extends React.Component {
           style={link}
           activeStyle={{background: '#6A994E'}}>
         Books I Want to read</NavLink>
+        <SearchForm/>
       </div>
     );
   }
